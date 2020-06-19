@@ -1,0 +1,24 @@
+<ion-header size="large">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cari Gandengan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let item of listUsers.users">
+      <ion-col offset-4>
+        <ion-card text-center color="primary" (click)="goDetail(item)">
+          <ion-img src="{{item.gambar}}"></ion-img>
+        </ion-card>
+        <div class="ion-text-center">
+          <h5>{{item.nama}}</h5>
+          <ion-icon name="star"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

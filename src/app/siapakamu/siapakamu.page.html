@@ -1,0 +1,29 @@
+<ion-header size="large">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Who are YOU?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col offset-4>
+        <ion-card text-center color="primary">
+          <ion-icon name="search"></ion-icon>
+          <ion-button shape="round" color="light" [routerLink]="['/isiprofilmu']">Pencari</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col offset-4>
+        <ion-card text-center color="primary">
+          <ion-icon name="person"></ion-icon>
+          <ion-button shape="round" color="light" [routerLink]="['/mission']">Gandengan</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

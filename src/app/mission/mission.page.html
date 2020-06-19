@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Your MISSION</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="assets/avatar/8-circle.png">
+    </ion-avatar>
+    <ion-icon slot="end" name="chatbox-ellipses-outline" [routerLink]="['/chat']"></ion-icon>
+    <ion-label [routerLink]="['/profilgd']">
+      <h3>Donna Maretha</h3>
+      <p>20 th, Reunian</p>
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="assets/avatar/6.png">
+    </ion-avatar>
+    <ion-icon slot="end" name="chatbox-ellipses-outline" [routerLink]="['/chat']"></ion-icon>
+    <ion-label [routerLink]="['/profilgd']">
+      <h3>Sabrina Imelda</h3>
+      <p>20 th, Kondangan</p>
+    </ion-label>
+  </ion-item>
+</ion-content>

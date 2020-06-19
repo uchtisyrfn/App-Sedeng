@@ -1,5 +1,7 @@
 {
   "name": "Sedeng?App",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

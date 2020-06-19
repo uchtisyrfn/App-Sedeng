@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sewa GANDENGANMU</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label position="floating">Pilih Jenis Acara</ion-label>
+      <ion-select ok-text="OK" cancel-text="Cancel">
+        <ion-select-option value="kondangan">Kondangan</ion-select-option>
+        <ion-select-option value="lamaran">Lamaran</ion-select-option>
+        <ion-select-option value="reuni">Reunian</ion-select-option>
+        <ion-select-option value="arisan">Arisan</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Tanggal Acara</ion-label>
+      <ion-datetime min="2020-01-01" max="2021-12-31" placeholder="Select Date"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Waktu Acara</ion-label>
+      <ion-datetime display-format="h:mm A" picker-format="h:mm A" placeholder="Select Time"></ion-datetime>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Location</ion-label>
+      <ion-input type="text" required placeholder="Pick Location"></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" expand="block" shape="round" [routerLink]="['/beranda']">Next STEP</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
